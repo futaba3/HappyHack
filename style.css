@@ -1,4 +1,67 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+@font-face {
+    font-family: "Futura-BooObl";
+    src: url("fonts/Futura-BooObl.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Futura-Boo";
+    src: url("fonts/Futura-Boo.ttf") format("truetype");
+}
+
+a {
+    text-decoration: none;
+}
+
+.firstView {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(images/background1.jpg);
+}
+
+nav {
+    padding: 30px 25px;
+    margin-right: 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    padding: 15px;
+    font-size: 30px;
+    font-family: Futura-Boo;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0.05em;
+}
+
+nav a:hover {
+    color: #3e5cda;
+    transition: 0.5s;
+}
+
+.title {
+    padding-top: 200px;
+    text-align: center;
+    font-family: Futura-BooObl;
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.title p {
+    margin-top: 50px;
 }
