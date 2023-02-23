@@ -6,17 +6,45 @@
 }
 
 @font-face {
+    font-family: "Futura-Boo";
+    src: url("fonts/Futura-Boo.ttf") format("truetype");
+}
+
+@font-face {
     font-family: "Futura-BooObl";
     src: url("fonts/Futura-BooObl.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Futura-Boo";
-    src: url("fonts/Futura-Boo.ttf") format("truetype");
+    font-family: "Futura-Med";
+    src: url("fonts/Futura-Med.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Futura-Bol";
+    src: url("fonts/Futura-Bol.ttf") format("truetype");
 }
 
 a {
     text-decoration: none;
+}
+
+h2 {
+    font-family: Futura-Bol;
+    text-align: center;
+    font-size: 55px;
+    color: #3e5cda;
+    font-weight: bold;
+    margin: 50px;
+}
+
+footer {
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    text-align: center;
+    font-family: Futura-Med;
+    color: #3e5cda;
 }
 
 .firstView {
@@ -64,4 +92,9 @@ nav a:hover {
 
 .title p {
     margin-top: 50px;
+}
+
+.map {
+    text-align: center;
+    margin-bottom: 40px;
 }
