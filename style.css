@@ -66,10 +66,6 @@ footer {
     color: #3e5cda;
 }
 
-/* .fadein {
-    fadeinさせる
-} */
-
 .firstView {
     width: 100vw;
     height: 100vh;
@@ -106,14 +102,14 @@ nav a:hover {
 .title {
     padding-top: 200px;
     text-align: center;
-    font-family: Futura-BooObl;
-    font-size: 48px;
-    font-weight: bold;
-    color: #fff;
 }
 
 .title p {
     padding-top: 50px;
+    font-family: Futura-BooObl;
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
 }
 
 #introduction {
@@ -172,6 +168,19 @@ nav a:hover {
     background-color: #d6e5f9;
     padding: 0 200px 30px;
 }
+#particles-js {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.wrap {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: relative;
+}
+
 
 .courses-contents {
     display: flex;
