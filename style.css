@@ -5,29 +5,47 @@
     list-style: none;
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", sans-serif;
 }
-
 @font-face {
     font-family: "Futura-Boo";
     src: url("fonts/Futura-Boo.ttf") format("truetype");
 }
-
 @font-face {
     font-family: "Futura-BooObl";
     src: url("fonts/Futura-BooObl.ttf") format("truetype");
 }
-
 @font-face {
     font-family: "Futura-Med";
     src: url("fonts/Futura-Med.ttf") format("truetype");
 }
-
 @font-face {
     font-family: "Futura-Bol";
     src: url("fonts/Futura-Bol.ttf") format("truetype");
 }
 
+.fadein-anime {
+    -webkit-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-duration:1.5s;
+    -ms-animation-duration:1.5s;
+    animation-duration:1.5s;
+    -webkit-animation-name: fadein-anime;
+    -ms-animation-name: fadein-anime;
+    animation-name: fadein-anime;
+    visibility: visible !important;
+   }
+   @-webkit-keyframes fadein-anime {
+    0% { opacity: 0; -webkit-transform: translateY(-20px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+   }
+   @keyframes fadein-anime {
+    0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+   }
+
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 h2 {
@@ -47,6 +65,10 @@ footer {
     font-family: Futura-Med;
     color: #3e5cda;
 }
+
+/* .fadein {
+    fadeinさせる
+} */
 
 .firstView {
     width: 100vw;
@@ -95,7 +117,7 @@ nav a:hover {
 }
 
 #introduction {
-    padding: 0 200px;
+    padding: 0 200px 78px;
 }
 
 .introduction-content {
@@ -124,29 +146,119 @@ nav a:hover {
     line-height: 32px;
 }
 
-.entry-one {
+.introduction-contents a {
     display: inline-block;
-    background: #3e5cda;
     height: 40px;
     width: 170px;
     font-size: 20px;
     line-height: 40px;
     font-weight: bold;
-    color: #fff;
     border-radius: 10px;
 }
 
-.entry-two {
-    display: inline-block;
-    background: #ffbf03;
-    height: 40px;
-    width: 170px;
-    font-size: 20px;
-    line-height: 40px;
-    font-weight: bold;
-    color: #fff;
-    border-radius: 10px;
+.introduction-contents a:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
+
+.entry-one {
+    background: #3e5cda;
+}
+
+.entry-two {
+    background: #ffbf03;
+}
+
+#courses {
+    background-color: #d6e5f9;
+    padding: 0 200px 30px;
+}
+
+.courses-contents {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.courses-content {
+    background-color: #fff;
+    width: 240px;
+    height: 340px;
+    padding: 40px 35px 45px;
+    margin: 0 10px 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.courses-img {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+}
+
+.courses-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.courses-content p {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.courses-content a {
+    display: inline-block;
+    margin-top: 30px;
+    width: 170px;
+    height: 40px;
+    border-radius: 10px; 
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 40px;   
+}
+.courses-content a:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.button-html {
+    background-color: #f16629;
+}
+.button-css {
+    background-color: #2aa9df;
+}
+.button-unity {
+    background-color: #333;
+}
+.button-ruby {
+    background-color: #ff5252;
+}
+.button-js {
+    background-color: #ffd700;
+}
+.button-swift {
+    background-color: #fe7635;
+}
+.button-go {
+    background-color: #74cedd;
+}
+
+.slider {
+    width: 80%;
+    margin: 0 auto;
+}
+.slider img {
+    height: 190px;
+    width: 290px;
+}
+.slider .slick-arrow:before{
+    font-size: 20px;
+    color: #000;
+}
+
 
 .map {
     text-align: center;

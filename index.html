@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Hack</title>
     <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="js/jquery.bgswitcher.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="js/main.js"></script>
 </head>
 
@@ -28,7 +31,7 @@
             <p>We are Web Designers.</p>
         </div>
     </header>
-    <section id="introduction">
+    <section id="introduction" class="fadein">
         <h2>Introduction</h2>
         <div class="introduction-contents">
             <div class="introduction-content">
@@ -56,10 +59,58 @@
                 </div>
             </div>
         </div>
-
     </section>
-
-    <section id="access">
+    <section id="courses" class="fadein">
+        <h2>Courses</h2>
+        <div class="courses-contents">
+            <div class="courses-content">
+                <div class="courses-img"><img src="images/html.png" alt=""></div>
+                <p>HTMLコース</p>
+                <a href="courses" class="button-html">このコースを受ける</a>
+            </div>
+            <div class="courses-content">
+                <div class="courses-img"><img src="images/css.png" alt=""></div>
+                <p>CSSコース</p>
+                <a href="courses" class="button-css">このコースを受ける</a>
+            </div>
+            <div class="courses-content">
+                <div class="courses-img"><img src="images/unity.png" alt=""></div>
+                <p>Unityコース</p>
+                <a href="courses" class="button-unity">このコースを受ける</a>
+            </div>
+            <div class="courses-content">
+                <div class="courses-img"><img src="images/Ruby.png" alt=""></div>
+                <p>Rubyコース</p>
+                <a href="courses" class="button-ruby">このコースを受ける</a>
+            </div>
+            <div class="courses-content">
+                <div class="courses-img"><img src="images/js.png" alt=""></div>
+                <p>JavaScriptコース</p>
+                <a href="courses" class="button-js">このコースを受ける</a>
+            </div>
+            <div class="courses-content">
+                <div class="courses-img"><img src="images/swift.png" alt=""></div>
+                <p>Swiftコース</p>
+                <a href="courses" class="button-swift">このコースを受ける</a>
+            </div>
+            <div class="courses-content">
+                <div class="courses-img"><img src="images/go.png" alt=""></div>
+                <p>Goコース</p>
+                <a href="courses" class="button-go">このコースを受ける</a>
+            </div>
+        </div>
+    </section>
+    <section id="images" class="fadein">
+        <h2>Images</h2>
+        <div class="slider">
+            <div><img src="images/background1.jpg" alt=""></div>
+            <div><img src="images/background2.jpg" alt=""></div>
+            <div><img src="images/background3.jpg" alt=""></div>
+            <div><img src="images/background4.jpg" alt=""></div>
+            <div><img src="images/background5.jpg" alt=""></div>
+        </div>
+    </section>
+    <section id="access" class="fadein">
         <h2>Access</h2>
         <div class="map">
             <iframe
