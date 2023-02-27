@@ -173,7 +173,6 @@ nav a:hover {
 
 #courses {
     background-color: #d6e5f9;
-    padding: 0 200px 30px;
 }
 #particles-js {
     position: absolute;
@@ -192,8 +191,10 @@ nav a:hover {
 
 
 .courses-contents {
+    width: 80%;
     display: flex;
     justify-content: center;
+    vertical-align: middle;
     flex-wrap: wrap;
 }
 
@@ -341,9 +342,6 @@ nav a:hover {
     .introduction-contents a {
         margin-top: 30px;
         font-size: 15px;
-    }
-    #courses {
-        padding: 0;
     }
     .courses-content {
         flex-basis: 160px;
