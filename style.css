@@ -133,10 +133,6 @@ nav a:hover {
     align-items: center;
     justify-content: center;
 }
-.introduction-content-two {
-    display: flex;
-    justify-content: center;
-}
 .introduction-contents p {
     text-align: left;
     line-height: 32px;
@@ -184,12 +180,13 @@ nav a:hover {
 
 
 .courses-contents {
-    width: 80%;
     display: flex;
     justify-content: center;
     vertical-align: middle;
     margin: 0 auto;
     flex-wrap: wrap;
+    max-width: 80%;
+    padding-bottom: 40px;
 }
 
 .courses-content {
@@ -331,12 +328,14 @@ nav a:hover {
         margin-top: 30px;
         font-size: 15px;
     }
+    .courses-contents {
+        max-width: 100%;
+    }
     .courses-content {
         flex-basis: 160px;
         width: 160px;
         height: 220px;
         padding: 0;
-        margin: 0 auto;
         margin-bottom: 20px;
     }
     .courses-img {
