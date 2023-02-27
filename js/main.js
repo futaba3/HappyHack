@@ -6,25 +6,21 @@ $(function ($) {
         loop: true
     });
 
-    
-    if (matchMedia('(max-width: 480px)').matches) {
-        // スマホサイズ
-        $('.slider').slick({
-            infinite: true,
+    $(".slider").slick({
+        infinite: true,
+        arrows: true,
+        dots: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
             slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: true,
-            arrows: true
-        });
-    } else {
-        $('.slider').slick({
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            dots: true,
-            arrows: true
-        });
-    }
+            },
+          },
+        ],
+    });
 
     $('.fadein').css('visibility', 'hidden');
     $(window).scroll(function () {

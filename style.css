@@ -116,40 +116,33 @@ nav a:hover {
     font-weight: bold;
     color: #fff;
 }
-.introduction-contents {
-    display: flex;
-    flex-direction: column;
-}
 .introduction-content {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    gap: 50px;
 }
 .introduction-content * {
     width: 500px;
 }
 .introduction-text {
-    text-align: center;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .introduction-content-two {
     display: flex;
     justify-content: center;
 }
-.introduction-text-two {
-    text-align: center;
-}
-
 .introduction-contents p {
     text-align: left;
     line-height: 32px;
 }
-.introduction-img img{
-    width: 90%;
-    height: auto;
-}
 .introduction-contents a {
+    text-align: center;
     display: inline-block;
     height: 40px;
     width: 170px;
@@ -195,6 +188,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     vertical-align: middle;
+    margin: 0 auto;
     flex-wrap: wrap;
 }
 
@@ -313,20 +307,14 @@ nav a:hover {
     .title img {
         width: 80vw;
     }
-    #introduction {
-        padding: 0 0 50px;
-    }
     .introduction-content {
         flex-direction: column;
     }
-    .introduction-text {
-        padding: 30px 42px;
+    .introduction-content * {
+        width: 100%;
     }
     .introduction-content-two {
         flex-direction: column-reverse;
-    }
-    .introduction-text-two {
-        padding: 30px 42px;
     }
     .introduction-contents p {
         font-size: 13px;
@@ -348,6 +336,8 @@ nav a:hover {
         width: 160px;
         height: 220px;
         padding: 0;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
     .courses-img {
         margin-top: 20px;
@@ -367,11 +357,8 @@ nav a:hover {
         width: 140px;
         height: 40px;
     }
-    .slider img {
-        width: 100%;
-    }
     .map iframe {
         height: 295px;
-        width: 100vw;
+        width: 100%;
     }
 }
