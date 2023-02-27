@@ -66,15 +66,8 @@ footer {
     color: #3e5cda;
 }
 
-.firstView {
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-}
-
 nav {
     padding: 30px 25px;
-    margin-right: 10px;
     position: absolute;
     top: 0;
     width: 100%;
@@ -86,8 +79,8 @@ nav ul {
 }
 
 nav a {
-    padding: 15px;
-    font-size: 30px;
+    padding: 25px;
+    font-size: 27px;
     font-family: Futura-Boo;
     font-weight: bold;
     color: #fff;
@@ -99,11 +92,23 @@ nav a:hover {
     transition: 0.5s;
 }
 
+.firstView {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
 .title {
-    padding-top: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
 }
-
+.title img {
+    width: 100%;
+    height: auto;
+}
 .title p {
     padding-top: 50px;
     font-family: Futura-BooObl;
@@ -111,27 +116,28 @@ nav a:hover {
     font-weight: bold;
     color: #fff;
 }
-
-#introduction {
-    padding: 0 200px 78px;
+.introduction-contents {
+    display: flex;
+    flex-direction: column;
 }
-
 .introduction-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.introduction-content * {
+    width: 500px;
 }
 .introduction-text {
-    padding: 15px 50px 0 85px;
     text-align: center;
+    padding: 20px;
 }
-
 .introduction-content-two {
     display: flex;
-    justify-content: space-between;
-    margin-top: 95px;
+    justify-content: center;
 }
 .introduction-text-two {
-    padding: 0 95px 0 50px;
     text-align: center;
 }
 
@@ -140,7 +146,7 @@ nav a:hover {
     line-height: 32px;
 }
 .introduction-img img{
-    width: 500px;
+    width: 90%;
     height: auto;
 }
 .introduction-contents a {
@@ -151,6 +157,7 @@ nav a:hover {
     line-height: 40px;
     font-weight: bold;
     border-radius: 10px;
+    margin: 20px;
 }
 .introduction-contents a:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -262,8 +269,8 @@ nav a:hover {
     margin: 0 auto;
 }
 .slider img {
-    height: 190px;
-    width: 290px;
+    width: 100%;
+    height: auto;
 }
 .slider .slick-arrow:before{
     font-size: 20px;
